@@ -5,6 +5,25 @@ body, html{
   background-color: white;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+h5 {
+  color: grey;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+h3{
+  color: rgb(57, 57, 57);
+  margin-top: 5px;
+}
+p {
+  font-weight: lighter;
+  font-size: 15px
+}
+.text {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .icon {
   filter: invert();
@@ -76,6 +95,40 @@ body, html{
   background-color: rgb(237, 154, 189);
 }
 
+span{
+  border-radius: 50px;
+  padding: 8px;
+  background-color: white;
+  border: 2px solid lightgrey;
+  font-size: 14px;
+  font-weight: 650;
+  color: grey;
+  float: left;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+span:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.java{
+  color: rgb(37, 147, 117);
+}
+.wordpress{
+  color: rgb(129, 128, 201);
+}
+.python{
+  color: rgb(237, 154, 189);
+}
+.favorite, .play {
+  float: right;
+}
+
+.favorite img, .play img {
+  width: 15px;
+  height: 15px;
+  opacity: 0.2;
+}
 /*
 #navbar::after {
   content: "";
