@@ -5,25 +5,32 @@ body, html{
   background-color: white;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 h2{
   float: left;
-
+  margin-left: 20px;
+  font-size: 1.3em;
+  font-weight: 400%;
 }
 h5 {
   color: grey;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 900;
   margin-bottom: 0;
 }
 h3{
   color: rgb(57, 57, 57);
   margin-top: 5px;
+  font-weight: 800%;
 }
 p {
   font-weight: lighter;
-  font-size: 15px
+  font-size: 15px;
+  color: grey;
+}
+.border p{
+  color: white;
 }
 .text {
   padding-left: 20px;
@@ -50,7 +57,7 @@ p {
 }
 #wrap{
   width: 1220px;
-  background-color: rgb(238, 238, 238);
+  background-color: #EDEFF0;
   margin:0 auto;
   margin-top: 10px;
   overflow: auto;
@@ -59,9 +66,9 @@ p {
 }
 #navbar{
   margin: 0 auto;
-  background-color: rgb(238, 238, 238);
+  background-color: #EDEFF0;
   width: 1150px;
-  padding: 10px;
+  padding: 0px;
   /*height: 75px;*/
   -webkit-box-shadow: 0px 7px 5px -6px rgba(0,0,0,0.50);
   -moz-box-shadow: 0px 7px 5px -6px rgba(0,0,0,0.50);
@@ -70,10 +77,11 @@ p {
 }
 .module {
   width: 520px;
-  height: 300px;
+  height: 330px;
   background: white;
   margin: 30px;
   border-radius: 5px;
+  box-shadow: 0px 7px 5px -6px rgba(0,0,0,0.2);
   /*border-top: 50px solid black;*/
 }
 .module:nth-child(odd) {
@@ -90,35 +98,34 @@ p {
   text-align: right;
   color: white;
   padding-right: 25px;
-  padding-bottom: 13px;
-  padding-top: 13px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   border-radius: 5px 5px 0px 0px;
 }
-.module:first-child .border{
-  background-color: rgb(37, 147, 117);
-}
-.module:last-child .border{
-  background-color: rgb(37, 147, 117);
+.module:first-child .border, .module:last-child .border {
+  background-color: #2C9676;
 }
 .module:nth-child(3) .border{
-  background-color: rgb(129, 128, 201);
+  background-color: #838CC7;
 }
 .module:nth-child(2) .border{
-  background-color: rgb(237, 154, 189);
+  background-color: #F092B0;
 }
 hr{
   margin-bottom: 0px;
 }
 span{
   border-radius: 50px;
-  padding: 8px;
+  padding: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
   background-color: white;
   border: 2px solid lightgrey;
   font-size: 14px;
-  font-weight: 650;
+  font-weight: 900;
   color: grey;
   float: left;
-  margin-top: 15px;
+  margin-top: 35px;
   margin-right: 15px;
 }
 span:hover {
@@ -126,21 +133,25 @@ span:hover {
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 }
 .java{
-  color: rgb(37, 147, 117);
+  color: #2C9676;
 }
 .wordpress{
-  color: rgb(129, 128, 201);
+  color: #838CC7;
 }
 .python{
-  color: rgb(237, 154, 189);
+  color: #F092B0;
 }
 .favorite, .play {
   float: right;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .favorite img, .play img {
-  width: 15px;
-  height: 15px;
+  padding: 3px;
+  padding-right: 3px;
+  width: 22px;
+  height: 22px;
   opacity: 0.2;
 }
 /*
