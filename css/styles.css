@@ -7,6 +7,10 @@ body, html{
   padding: 0;
   font-family: sans-serif;
 }
+h2{
+  float: left;
+
+}
 h5 {
   color: grey;
   font-size: 15px;
@@ -40,21 +44,29 @@ p {
   margin-left: 8px;
   margin-top: 20px;
 }
+.header{
+  float: right;
+
+}
 #wrap{
   width: 1220px;
-  background-color: rgb(217, 217, 217);
+  background-color: rgb(238, 238, 238);
   margin:0 auto;
   margin-top: 10px;
   overflow: auto;
   padding: 20px;
+  padding-bottom: 5px;
 }
 #navbar{
   margin: 0 auto;
-  background-color: rgb(217, 217, 217);
+  background-color: rgb(238, 238, 238);
   width: 1150px;
   padding: 10px;
-  box-shadow: 0px 3px 3px rgba(45, 45, 45, 0.3);
-  height: 75px
+  /*height: 75px;*/
+  -webkit-box-shadow: 0px 7px 5px -6px rgba(0,0,0,0.50);
+  -moz-box-shadow: 0px 7px 5px -6px rgba(0,0,0,0.50);
+  box-shadow: 0px 7px 5px -6px rgba(0,0,0,0.50);
+  overflow: auto;
 }
 .module {
   width: 520px;
@@ -94,7 +106,9 @@ p {
 .module:nth-child(2) .border{
   background-color: rgb(237, 154, 189);
 }
-
+hr{
+  margin-bottom: 0px;
+}
 span{
   border-radius: 50px;
   padding: 8px;
