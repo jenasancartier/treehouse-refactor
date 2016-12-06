@@ -1,4 +1,4 @@
-# [Treehouse CSS to Sass Refactor](https://jenasancartier.github.io/treehouse-refactor/)
+# [CSS to Sass Refactor](https://jenasancartier.github.io/treehouse-refactor/)
 ![project screenshot](/img/screenshot.png)
 
 __Version 1: December 6, 2016__
