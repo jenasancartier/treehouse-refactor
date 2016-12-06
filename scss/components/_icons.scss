@@ -1,0 +1,20 @@
+//top-icons
+.border {
+  @extend %border;
+  p {
+    color: $white;
+  }
+}
+.icon {
+  @extend %float-left;
+  width: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.circle {
+  @extend %float-left;
+  width: 11px;
+  margin-left: 8px;
+  margin-top: 20px;
+}

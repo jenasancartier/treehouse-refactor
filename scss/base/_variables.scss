@@ -1,1 +1,20 @@
-// 
+// descriptive color variables
+$white: white;
+$grey: grey;
+$green: #2C9676;
+$purple: #838CC7;
+$pink: #F092B0;
+$light-grey: #EDEFF0;
+
+//funtional color variables
+$color-text: $grey;
+$color-background: $light-grey;
+$color-h3: rgb(57, 57, 57);
+$color-shadow: rgba(0,0,0,0.50);
+
+//font stacks
+$stack-sans-serif: sans-serif;
+$stack-hind: 'Hind', sans-serif;
+
+//media queries
+$break-narrow: '(max-width: 625px)';

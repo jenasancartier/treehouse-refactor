@@ -1,0 +1,60 @@
+//columns
+.module {
+  width: 520px;
+  height: 330px;
+  background: $white;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 7px 5px -6px $color-shadow;
+  &:nth-child(odd) {
+    @extend %float-left;
+    margin-left: 40px;
+    @media #{$break-narrow} {
+      float: none;
+      margin-left: 0;
+    }
+  }
+  &:nth-child(even) {
+    @extend %float-right;
+    margin-right: 40px;
+    @media #{$break-narrow} {
+      float: none;
+      margin-right: 0;
+    }
+  }
+  &:first-child .border,
+  &:last-child .border {
+    background-color: $green;
+  }
+  &:nth-child(3) .border {
+    background-color: $purple;
+  }
+  &:nth-child(2) .border {
+    background-color: $pink;
+  }
+}
+
+.text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+//inside of text class, column
+span{
+  @extend %float-left;
+  border-radius: 50px;
+  padding: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: $white;
+  border: 2px solid light $grey;
+  font-size: 14px;
+  font-weight: 900;
+  color: $grey;
+  margin-top: 35px;
+  margin-right: 15px;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px $color-shadow;
+  }
+}

@@ -1,0 +1,16 @@
+// heading
+#navbar{
+  margin: 0 auto;
+  background-color: $light-grey;
+  width: 100%;
+  padding: 0px;
+  /*height: 75px;*/
+  -webkit-box-shadow: 0px 7px 5px -6px $color-shadow;
+  -moz-box-shadow: 0px 7px 5px -6px $color-shadow;
+  box-shadow: 0px 7px 5px -6px $color-shadow;
+  overflow: auto;
+}
+
+.header{
+  @extend %float-right;
+}

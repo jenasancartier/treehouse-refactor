@@ -1,0 +1,24 @@
+//container content
+#wrap{
+  width: 1220px;
+  background-color: $color-background;
+  margin:0 auto;
+  margin-top: 10px;
+  overflow: auto;
+  padding: 20px;
+  padding-bottom: 5px;
+  @media #{$break-narrow} {
+    width: 100vw;
+  }
+}
+
+// spans
+.java{
+  color: $green;
+}
+.wordpress{
+  color: $pink;
+}
+.python{
+  color: $purple;
+}
