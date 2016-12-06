@@ -7,19 +7,21 @@
   border-radius: 5px;
   box-shadow: 0px 7px 5px -6px $color-shadow;
   &:nth-child(odd) {
-    @extend %float-left;
+    float: left;
     margin-left: 40px;
     @media #{$break-narrow} {
       float: none;
-      margin-left: 0;
+      margin-left: 0px;
+      margin-right: 0px;
     }
   }
   &:nth-child(even) {
-    @extend %float-right;
+    float: right;
     margin-right: 40px;
     @media #{$break-narrow} {
       float: none;
-      margin-right: 0;
+      margin-right: 0px;
+      margin-left: 0px;
     }
   }
   &:first-child .border,
