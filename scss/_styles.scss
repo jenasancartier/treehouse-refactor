@@ -8,7 +8,7 @@ body, html{
   font-family: 'Hind', sans-serif;
 }
 h2{
-  float: left;
+  @extend %float-left;
   margin-left: 20px;
   font-size: 1.3em;
   font-weight: 400%;
@@ -29,30 +29,35 @@ p {
   font-size: 15px;
   color: grey;
 }
-.border p{
-  color: white;
+
+.border {
+  @extend %border;
+  p {
+    color: white;
+  }
 }
+
 .text {
   padding-left: 20px;
   padding-right: 20px;
 }
 .icon {
-  filter: invert();
+  // filter: invert();
   width: 20px;
-  float: left;
+  @extend %float-left;
   margin-left: 30px;
   margin-right: 10px;
   margin-top: 15px;
 }
 .circle {
-  filter: invert();
+  // filter: invert();
   width: 11px;
-  float: left;
+  @extend %float-left;
   margin-left: 8px;
   margin-top: 20px;
 }
 .header{
-  float: right;
+  @extend %float-right;
 
 }
 #wrap{
@@ -85,32 +90,24 @@ p {
   /*border-top: 50px solid black;*/
 }
 .module:nth-child(odd) {
-  float: left;
+  @extend %float-left;
   margin-left: 40px;
 }
 .module:nth-child(even) {
-  float: right;
+  @extend %float-right;
   margin-right: 40px;
 }
-.border{
-  margin:0;
-  padding: 0;
-  text-align: right;
-  color: white;
-  padding-right: 25px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  border-radius: 5px 5px 0px 0px;
-}
+
 .module:first-child .border, .module:last-child .border {
   background-color: #2C9676;
 }
-.module:nth-child(3) .border{
+.module:nth-child(3) .border {
   background-color: #838CC7;
 }
-.module:nth-child(2) .border{
+.module:nth-child(2) .border {
   background-color: #F092B0;
 }
+
 hr{
   margin-bottom: 0px;
 }
@@ -124,7 +121,7 @@ span{
   font-size: 14px;
   font-weight: 900;
   color: grey;
-  float: left;
+  @extend %float-left;
   margin-top: 35px;
   margin-right: 15px;
 }
@@ -142,7 +139,7 @@ span:hover {
   color: #F092B0;
 }
 .favorite, .play {
-  float: right;
+  @extend %float-right;
   padding-left: 5px;
   padding-right: 5px;
 }
