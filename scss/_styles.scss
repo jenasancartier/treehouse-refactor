@@ -1,3 +1,5 @@
+//container content
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +8,15 @@ body, html{
   margin: 0;
   padding: 0;
   font-family: 'Hind', sans-serif;
+}
+#wrap{
+  width: 1220px;
+  background-color: #EDEFF0;
+  margin:0 auto;
+  margin-top: 10px;
+  overflow: auto;
+  padding: 20px;
+  padding-bottom: 5px;
 }
 h2{
   @extend %float-left;
@@ -29,46 +40,10 @@ p {
   font-size: 15px;
   color: grey;
 }
-
-.border {
-  @extend %border;
-  p {
-    color: white;
-  }
+hr{
+  margin-bottom: 0px;
 }
-
-.text {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.icon {
-  // filter: invert();
-  width: 20px;
-  @extend %float-left;
-  margin-left: 30px;
-  margin-right: 10px;
-  margin-top: 15px;
-}
-.circle {
-  // filter: invert();
-  width: 11px;
-  @extend %float-left;
-  margin-left: 8px;
-  margin-top: 20px;
-}
-.header{
-  @extend %float-right;
-
-}
-#wrap{
-  width: 1220px;
-  background-color: #EDEFF0;
-  margin:0 auto;
-  margin-top: 10px;
-  overflow: auto;
-  padding: 20px;
-  padding-bottom: 5px;
-}
+// heading
 #navbar{
   margin: 0 auto;
   background-color: #EDEFF0;
@@ -80,6 +55,12 @@ p {
   box-shadow: 0px 7px 5px -6px rgba(0,0,0,0.50);
   overflow: auto;
 }
+
+.header{
+  @extend %float-right;
+}
+
+//columns
 .module {
   width: 520px;
   height: 330px;
@@ -89,6 +70,7 @@ p {
   box-shadow: 0px 7px 5px -6px rgba(0,0,0,0.2);
   /*border-top: 50px solid black;*/
 }
+
 .module:nth-child(odd) {
   @extend %float-left;
   margin-left: 40px;
@@ -108,9 +90,44 @@ p {
   background-color: #F092B0;
 }
 
-hr{
-  margin-bottom: 0px;
+.text {
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+
+
+//top-icons
+.border {
+  @extend %border;
+  p {
+    color: white;
+  }
+}
+.icon {
+  // filter: invert();
+  width: 20px;
+  @extend %float-left;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.circle {
+  // filter: invert();
+  width: 11px;
+  @extend %float-left;
+  margin-left: 8px;
+  margin-top: 20px;
+}
+
+
+//inside of text class, column
+span:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+
 span{
   border-radius: 50px;
   padding: 5px;
@@ -125,10 +142,7 @@ span{
   margin-top: 35px;
   margin-right: 15px;
 }
-span:hover {
-  cursor: pointer;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
-}
+//
 .java{
   color: #2C9676;
 }
